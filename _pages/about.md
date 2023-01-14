@@ -2,21 +2,23 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: PhD @ unitn
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>via Sommarive, 9, Povo</p>
+    <p>Trento, Italy</p>
 
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false  # includes a list of news items
+selected_papers: ture # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi, welcome! :) I'm a third year PhD student in the MHUG Group at UTrento.
-I'm adivsed by Prof. Nicu Sebe and working on image generation related topics.
+Hi :), I'm a Ph.D Student at the University of Trento where I work with Nicu Sebe and Elisa Ricci and other amazing people at the [`MHUG Group`](http://mhug.disi.unitn.it/#/).
+
+My research interests focus on applications of deep learning techniques for controllable and editable image generation.
+
+contact: `elia [dot] peruzzo [at] gmail [dot] com` 
