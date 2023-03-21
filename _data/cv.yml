@@ -9,73 +9,32 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD
+    - title: PhD Student
       institution: University of Trento, Trento, Italy
       year: 2020 - current
-    - title: Master Degree
-      institution: Unversity of Padua, Padua, Italy
-      year: 2019
       description:
-        - Description 1.
-        - Description 2.
     - title: Master Degree
-      institution: Unversity of Padua, Padua, Italy
-      year: 2019
-      description:
-        - Description 1.
-        - Description 2.
+      institution: University of Padua, Padua, Italy
+      year: 2017 - 2019
+      description: Telecommunications Engineering, 110 / 110 with honours.
+    - title: Bachelor Degree
+      institution: University of Padua, Padua, Italy
+      year: 2014 - 2017
+      description: Information Engineering, 110 / 110.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Reasearch Scientist Intern
+    - title: Research Scientist Intern
       institution: Picsart AI Research, New York, USA
-      year: 2022
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Research Assistent
+      year: Oct. 2022 - Feb. 2023
+    - title: Teacher Assistant, Introduction to Machine Learning
+      institution: University of Trento
+      year: Feb. 2023 - June 2023
+    - title: Research Assistant
       institution: National Taiwan University, Taipei, Taiwan
       year: 2018 - 2019
     - title: Data Scientist
       institution: SAS, Milan, Italy
       year: 2019 - 2020
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+      # text: medical image processing, our work in collaboration with University of Cambridge, ended up in a [pubbilication](https://google.com/).
