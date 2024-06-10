@@ -2,6 +2,21 @@
 ---
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 2024
+@INPROCEEDINGS{goel2023pairdiffusion,
+      title={PAIR-Diffusion: A Comprehensive Multimodal Object-Level Image Editor},
+      author={Vidit Goel* and Elia Peruzzo* and Yifan Jiang and Dejia Xu and Nicu Sebe and Trevor Darrell and Zhangyang Wang and Humphrey Shi},
+      year={2024},
+      arxiv={2303.17546},
+      booktitle={CVPR},
+      selected={true},
+      bibtex_show={true},
+      abbr={CVPR},
+      code={https://github.com/Picsart-AI-Research/PAIR-Diffusion},
+      dimensions={ture},
+      abstract={Image editing using diffusion models has witnessed extremely fast-paced growth recently. There are various ways in which previous works enable controlling and editing images. Some works use high-level conditioning such as text, while others use low-level conditioning. Nevertheless, most of them lack fine-grained control over the properties of the different objects present in the image, i.e. object-level image editing. In this work, we consider an image as a composition of multiple objects, each defined by various properties. Out of these properties, we identify structure and appearance as the most intuitive to understand and useful for editing purposes. We propose Structure-and-Appearance Paired Diffusion model (PAIR-Diffusion), which is trained using structure and appearance information explicitly extracted from the images. The proposed model enables users to inject a reference image's appearance into the input image at both the object and global levels. Additionally, PAIR-Diffusion allows editing the structure while maintaining the style of individual components of the image unchanged. We extensively evaluate our method on LSUN datasets and the CelebA-HQ face dataset, and we demonstrate fine-grained control over both structure and appearance at the object level. We also applied the method to Stable Diffusion to edit any real image at the object level.},
+      preview={pair.png}
+}
+
 @misc{peruzzo2024vase,
       title={VASE: Object-Centric Appearance and Shape Manipulation of Real Videos},
       author={Elia Peruzzo and Vidit Goel and Dejia Xu and Xingqian Xu and Yifan Jiang and Zhangyang Wang and Humphrey Shi and Nicu Sebe},
@@ -13,8 +28,26 @@
       selected={true},
       bibtex_show={true},
       abstract={Recently, several works tackled the video editing task fostered by the success of large-scale text-to-image generative models. However, most of these methods holistically edit the frame using the text, exploiting the prior given by foundation diffusion models and focusing on improving the temporal consistency across frames. In this work, we introduce a framework that is object-centric and is designed to control both the object's appearance and, notably, to execute precise and explicit structural modifications on the object. We build our framework on a pre-trained image-conditioned diffusion model, integrate layers to handle the temporal dimension, and propose training strategies and architectural modifications to enable shape control. We evaluate our method on the image-driven video editing task showing similar performance to the state-of-the-art, and showcasing novel shape-editing capabilities. },
-      code={https://helia95.github.io/vase-website/}
+      code={https://helia95.github.io/vase-website/},
+      preview={vase.gif},
 }
+
+
+@INPROCEEDINGS{d2024openbias,
+  title={OpenBias: Open-set Bias Detection in Text-to-Image Generative Models},
+  author={D'Inc{\`a}, Moreno and Peruzzo, Elia and Mancini, Massimiliano and Xu, Dejia and Goel, Vidit and Xu, Xingqian and Wang, Zhangyang and Shi, Humphrey and Sebe, Nicu},
+  arxiv={2404.07990},
+  year={2024},
+  booktitle={CVPR},
+  selected={true},
+  bibtex_show={true},
+  abbr={CVPR},
+  code={https://github.com/Picsart-AI-Research/OpenBias},
+  dimensions={true},
+  abstract={Text-to-image generative models are becoming increasingly popular and accessible to the general public. As these models see large-scale deployments, it is necessary to deeply investigate their safety and fairness to not disseminate and perpetuate any kind of biases. However, existing works focus on detecting closed sets of biases defined a priori, limiting the studies to well-known concepts. In this paper, we tackle the challenge of open-set bias detection in text-to-image generative models presenting OpenBias, a new pipeline that identifies and quantifies the severity of biases agnostically, without access to any precompiled set. OpenBias has three stages. In the first phase, we leverage a Large Language Model (LLM) to propose biases given a set of captions. Secondly, the target generative model produces images using the same set of captions. Lastly, a Vision Question Answering model recognizes the presence and extent of the previously proposed biases. We study the behavior of Stable Diffusion 1.5, 2, and XL emphasizing new biases, never investigated before. Via quantitative experiments, we demonstrate that OpenBias agrees with current closed-set bias detection methods and human judgement.},
+  preview={openbias.png}
+}
+
 
 % 2023
 @article{peruzzo2023interactive,
@@ -29,24 +62,10 @@
   abbr={CVIU},
   bibtex_show={true},
   code={https://github.com/Picsart-AI-Research/Interactive-Neural-Painting},
-  dimensions={ture},
+  dimensions={true},
   publisher={Elsevier},
-  abstract={n the last few years, Neural Painting (NP) techniques became capable of producing extremely realistic artworks. This paper advances the state of the art in this emerging research domain by proposing the first approach for Interactive NP. Considering a setting where a user looks at a scene and tries to reproduce it on a painting, our objective is to develop a computational framework to assist the user’s creativity by suggesting the next strokes to paint, that can be possibly used to complete the artwork. To accomplish such a task, we propose I-Paint, a novel method based on a conditional transformer Variational AutoEncoder (VAE) architecture with a two-stage decoder. To evaluate the proposed approach and stimulate research in this area, we also introduce two novel datasets. Our experiments show that our approach provides good stroke suggestions and compares favorably to the state of the art.}
-}
-
-
-@misc{goel2023pairdiffusion,
-      title={PAIR-Diffusion: A Comprehensive Multimodal Object-Level Image Editor},
-      author={Vidit Goel* and Elia Peruzzo* and Yifan Jiang and Dejia Xu and Nicu Sebe and Trevor Darrell and Zhangyang Wang and Humphrey Shi},
-      year={2023},
-      arxiv={2303.17546},
-      selected={true},
-      abbr={arxiv},
-      bibtex_show={true},
-      code={https://github.com/Picsart-AI-Research/PAIR-Diffusion},
-      dimensions={ture},
-      abstract={Image editing using diffusion models has witnessed extremely fast-paced growth recently. There are various ways in which previous works enable controlling and editing images. Some works use high-level conditioning such as text, while others use low-level conditioning. Nevertheless, most of them lack fine-grained control over the properties of the different objects present in the image, i.e. object-level image editing. In this work, we consider an image as a composition of multiple objects, each defined by various properties. Out of these properties, we identify structure and appearance as the most intuitive to understand and useful for editing purposes. We propose Structure-and-Appearance Paired Diffusion model (PAIR-Diffusion), which is trained using structure and appearance information explicitly extracted from the images. The proposed model enables users to inject a reference image's appearance into the input image at both the object and global levels. Additionally, PAIR-Diffusion allows editing the structure while maintaining the style of individual components of the image unchanged. We extensively evaluate our method on LSUN datasets and the CelebA-HQ face dataset, and we demonstrate fine-grained control over both structure and appearance at the object level. We also applied the method to Stable Diffusion to edit any real image at the object level.}
-
+  abstract={In the last few years, Neural Painting (NP) techniques became capable of producing extremely realistic artworks. This paper advances the state of the art in this emerging research domain by proposing the first approach for Interactive NP. Considering a setting where a user looks at a scene and tries to reproduce it on a painting, our objective is to develop a computational framework to assist the user’s creativity by suggesting the next strokes to paint, that can be possibly used to complete the artwork. To accomplish such a task, we propose I-Paint, a novel method based on a conditional transformer Variational AutoEncoder (VAE) architecture with a two-stage decoder. To evaluate the proposed approach and stimulate research in this area, we also introduce two novel datasets. Our experiments show that our approach provides good stroke suggestions and compares favorably to the state of the art.},
+  preview={inp.gif},
 }
 
 @misc{dallasen2023collaborative,
@@ -60,28 +79,31 @@
       bibtex_show={true},
       code={https://fodark.github.io/collaborative-neural-painting/},
       dimensions={true},
-      selected={true},
-      abstract={The process of painting fosters creativity and rational planning. However, existing generative AI mostly focuses on producing visually pleasant artworks, without emphasizing the painting process. We introduce a novel task, Collaborative Neural Painting (CNP), to facilitate collaborative art painting generation between humans and machines. Given any number of user-input brushstrokes as the context or just the desired object class, CNP should produce a sequence of strokes supporting the completion of a coherent painting. Importantly, the process can be gradual and iterative, so allowing users' modifications at any phase until the completion. Moreover, we propose to solve this task using a painting representation based on a sequence of parametrized strokes, which makes it easy both editing and composition operations. These parametrized strokes are processed by a Transformer-based architecture with a novel attention mechanism to model the relationship between the input strokes and the strokes to complete. We also propose a new masking scheme to reflect the interactive nature of CNP and adopt diffusion models as the basic learning process for its effectiveness and diversity in the generative field. Finally, to develop and validate methods on the novel task, we introduce a new dataset of painted objects and an evaluation protocol to benchmark CNP both quantitatively and qualitatively. We demonstrate the effectiveness of our approach and the potential of the CNP task as a promising avenue for future research.}
+      selected={false},
+      abstract={The process of painting fosters creativity and rational planning. However, existing generative AI mostly focuses on producing visually pleasant artworks, without emphasizing the painting process. We introduce a novel task, Collaborative Neural Painting (CNP), to facilitate collaborative art painting generation between humans and machines. Given any number of user-input brushstrokes as the context or just the desired object class, CNP should produce a sequence of strokes supporting the completion of a coherent painting. Importantly, the process can be gradual and iterative, so allowing users' modifications at any phase until the completion. Moreover, we propose to solve this task using a painting representation based on a sequence of parametrized strokes, which makes it easy both editing and composition operations. These parametrized strokes are processed by a Transformer-based architecture with a novel attention mechanism to model the relationship between the input strokes and the strokes to complete. We also propose a new masking scheme to reflect the interactive nature of CNP and adopt diffusion models as the basic learning process for its effectiveness and diversity in the generative field. Finally, to develop and validate methods on the novel task, we introduce a new dataset of painted objects and an evaluation protocol to benchmark CNP both quantitatively and qualitatively. We demonstrate the effectiveness of our approach and the potential of the CNP task as a promising avenue for future research.},
+      preview={cnp.png},
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 2022
-@arXiv{https://doi.org/10.48550/arxiv.2206.04636,
+@article{https://doi.org/10.48550/arxiv.2206.04636,
   doi = {10.48550/ARXIV.2206.04636},
   url = {https://arxiv.org/abs/2206.04636},
   author = {Peruzzo, Elia and Sangineto, Enver and Liu, Yahui and De Nadai, Marco and Bi, Wei and Lepri, Bruno and Sebe, Nicu},
   keywords = {Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
   title = {Spatial Entropy as an Inductive Bias for Vision Transformers},
-  publisher = {arXiv},
+  publisher={Elsevier},
   year = {2022},
   copyright = {arXiv.org perpetual, non-exclusive license},
-  selected={true},
-  abbr={arxiv},
+  selected={false},
+  abbr={ML},
+  journal={Machine Learning Journal},
   bibtex_show={true},
   abstract={Recent work has shown that the attention maps of Vision Transformers (VTs), when trained with self-supervision, can contain a semantic segmentation structure which does not spontaneously emerge when training is supervised. In this paper, we explicitly encourage the emergence of this spatial clustering as a form of training regularization, this way including a self-supervised pretext task into the standard supervised learning. In more detail, we propose a VT regularization method based on a spatial formulation of the information entropy. By minimizing the proposed spatial entropy, we explicitly ask the VT to produce spatially ordered attention maps, this way including an object-based prior during training. Using extensive experiments, we show that the proposed regularization approach is beneficial with different training scenarios, datasets, downstream tasks and VT architectures. The code will be available upon acceptance. },
   arxiv={2206.04636},
   code={https://github.com/helia95/SAR},
   dimensions={true},
+  preview={sar.png}
 }
 
 @INPROCEEDINGS{https://doi.org/10.48550/arxiv.2206.04636,
